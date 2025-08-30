@@ -1,0 +1,30 @@
+1. What is a class in Python, and how is it different from an object?
+-> A class is a blueprint in python which object can use to add the functionality to thier code. A object is an instance of the class which use the class property or the method
+2. Can you explain the four main pillars of Object-Oriented Programming? Give Python examples if possible.
+-> The four pillar of the object-Oriented Programming are encapsulation, polymorphism,abstraction and inheritance.
+   encapsulation means bind the data with the object so that user dont know what is happening under the hood
+   polymorphism means the same function name can be used in the class based on thier operations the the the desired functionality is added
+   abstraction means the bind the data with the object so that user dont know what is happending under the hood
+   inheritance means inherting the method or the attributes from the parent class is called inheritance
+3. What is the role of the __init__ method in a Python class?
+-> the __init__ is the method which tells the interpreter that where the class is been called i am the constructor of that class
+4. How does inheritance work in Python? How would you use the super() function?
+-> inheritance means inherting the method or the attributes from the parent class is called inheritance
+    super() function tell that inherhit the attribute from the parent class
+5. What is method overriding? Give an example in Python.
+-> method overriding means same name of function can be used in the child class and parent class if the child class dont have that function it check in the level above it
+6. Explain the difference between instance methods, class methods, and static methods in Python.
+-> sorry i dont know this
+7. What is encapsulation and how do you enforce it in Python?
+-> sorry i dont know this 
+8. What is polymorphism? How is it implemented in Python?
+-> polymorphism means the same function name can be used in the class based on thier operations the the the desired functionality is added
+    for eg parent class -> def fullInfo(self):
+                                return "this is the petrol and diesel car"
+            child class(this also have the same funciton name) -> def fullInfo(self):
+                                                                        return "this is the electrical car"
+            so when the instance of child class is called the fullInfo method the output will be "This is the electrical car"
+9. How do you implement abstraction in Python classes?
+-> sorry i dont know this
+10. What are magic methods in Python? Can you give an example?
+-> sorry i dont know this
