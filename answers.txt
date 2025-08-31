@@ -1,0 +1,78 @@
+1. what is the differnce between the mutuable and immutable objects:
+-> the mutuable objects are the objects that can be modified or changed whereas the immutable objects cannot be change the refernce point can get change but we cannot change or modified the immutable objects
+    the mutuable objects are -> list,dict,set, the immutable objects are: tuple,string,integer
+2.the python memory mangagement is done by two functionality 1. python memory manager which basically do the task of memory allocation to the object and then at runtime the interpreter assign the variable and point them to that object reference .when differenct object refernce to smae object the refernce count in the memory increase which is the refercercounter and when the variable is get's change the refernce count in decrease. the python garabage value means the value that is not been getting used will be clean by the garbage collector which run through the memory periodically the value directly dont get clear when this is done by the python garbage collector.
+3. the python garbage collector check at the refernce count when the referce count of the object get zero the python garbage collector this dont act immediately but the cleaning of the garbage value and freeing the memory is done by the python garbage coolector aslo their is fucntion by the gc module which tell that whether the automatic memory management should be enable or disable
+4.sorry i dont know this
+5. the decorator are nothing but the function which accepts the function does some perfroming over it and return the function without altering the definition of the function.
+    eg for the decorator:- lets cretae the decorator which will check after how much time the function execution is perfomed.
+    import time
+    def timer(func):
+        def wrapper(*args,**kwargs):
+            start = time.time()
+            result = func(*args,**kwargs)
+            end = time.time()
+            return f"{end-start}"
+        return wrapper
+    
+    @timer
+    def longrunfunc(n):
+        time.sleep(n)
+    longrunfunc(6)
+6. the generator are the iteratable objects in the memory which are used to iterator.
+    the generator that the access to the keyword yield which hold the refrence of the object and store and update gradually
+    all the generator are the iterator where as all the iterators are not the generators
+    iterator can iterator has access to the iter() function or __next__() or next() which iter hold the memory of the startig iteratable where as the next moves from the memory to memory
+7.  list,set,dic are mutuable where as the tuple is immutable 
+    list hold the data throguth indexing same with tuple and set but key hold the data through key value pair.
+    the tuple can hold the duplicate value like list but its immutable the set hold the unique value verse as the dic can hold the duplicate
+8.  sorry i dont know this
+9.  is check the value is equal to the value like if it's of same data type and is in same instance where as the == check the value based on the changine like 1 == True will come true
+10. the *args we can pass any postiional arguments means unlimited postional arguments in the funciton parenthsis where as the in **kwargs we can pass the unlimited key word arguments in the funciton called
+11. s = "aniket"
+    chars = s.split()
+    left = 0
+    right = len(chars)-1
+    while(left < right)
+        chars[left],char[right]= char[right],char[left]
+        left++
+        right--
+    reverS = "".join(chars)
+12. sorry i dont know
+13. if(s == s[::-1]) return true 
+14. recursicve => def fibonancei(num):
+                        if(num <=1 ):
+                             return 1
+                        return fibonancei(num-1)+fibonancei(num-2)
+    iterative =>    a= 0,b=1
+                    while(n!=0):
+                      
+                      sum = a+b
+                      a = b
+                      b = sum
+                        n-=1
+15. set(list1)
+16 - 20 sorry i dont know
+21. del directly delete the refernce point and then the variable form the stack is been removed
+    the remove mehtod is used to directly remove the element form the iteratble objects
+    pop() is the the mehtod which basically remove the object at the last like the last element will get remove if the index is pass it will remove that element which is present in that index
+22. we can modify the list and loose the objects form that list object
+23.sorry i dont know this
+24. shallow copy menas copying the one dimension list so that when the changes are made in the shallow copy the original list is not affected it required less computional piwer whereas the deepcopy can use use for copying the nested list in the python
+    both are useful based on the requiredment
+25. sorry i dont know this
+26. sorry i dont know this
+27. the module is the python file where the function and the attribute are mention we can access the module file whenever required whereas the module file is the collection of the module files and the package file have the __init__.py file which is the starting file of the package.
+28. static method are the the method that dont use the the self are use by the decorator self they dont require self because their ar emore generic and dont be needing self wehereas as class method also dont have access to the self they have access to cls attributes and using the classmethod we can modify the class attributes they are done by using the @classmethod from the decorator
+29. async and await are mostly use for handling the asyncronohus work the work which basically provude the promise the python handle such operataion like the db call or the extractinf the data from backend coming from thirdparty it uses the async and await method async tells that the interpreter that this function is asyncronohus in nature so while getting the value handle the synroshonus value but when this asyncrohous variable is gettign ready print this after the syncronohus variable are been handle.
+30. sorry i dont know
+31. sorry i dont know
+32. sorry i dont know
+33. sorry i dont know
+34. decorators are nothing but the functions that are wrapped inside the funciton without altering the the response or the definition of the original function the decoratro function perform the task on the function and then it provide the result. the common decorator function are @staticmethods or @classmethods @loginrequired in django
+35. sorry i dont know this
+36. uisng the try catch and finally in the generators if we dont handle the exception in the generator the exception the issue will be the occured and erro of stop iteration will display on the console
+37. sorry i dont know 
+38. sorry i dont know this
+39. sorry i dont know this
+40. sorry i dont know this
